@@ -8,3 +8,5 @@ ENTRYPOINT ["lighttpd-angel", "-D", "-f", "lighttpd.conf"]
 
 ADD lighttpd.conf lighttpd.conf
 RUN lighttpd -t -f lighttpd.conf
+
+VOLUME /var/www/default
